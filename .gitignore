@@ -1,0 +1,39 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+env/
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 敏感配置（API key 应放这里，不要提交） =====
+.env
+.env.local
+
+# ===== 大文件 / 模型权重（>100MB，GitHub 不接受） =====
+minimind-3/model.safetensors
+
+# ===== RAG 生成产物（可由脚本重建） =====
+Physical Oceanography RAG/chroma_db/
+Physical Oceanography RAG/*.npy
+Physical Oceanography RAG/image_descriptions.json
+
+# ===== 原始资料（如需公开，可自行删除下面几行） =====
+Physical Oceanography RAG/notes.pdf
+Physical Oceanography RAG/notes_images/
+
+# ===== 备份 / 临时文件 =====
+*.bak
+*.bak2
+*.tmp
+.dsh-write-probe.tmp
